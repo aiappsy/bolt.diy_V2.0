@@ -1,5 +1,5 @@
 # Stage 1: Base
-FROM node:20-alpine AS base
+FROM node:20-bullseye-slim AS base
 
 ENV PNPM_VERSION=10.18.0
 RUN npm install -g pnpm@${PNPM_VERSION}
